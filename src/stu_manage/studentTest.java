@@ -23,13 +23,14 @@ public class studentTest {
                     sm.regStudent();
                     break;
                 case 2 :
+
                     sm.setStuInfo();
                     break;
                 case 3 :
                     sm.showStuInfo();
                     break;
                 case 4 :
-                    System.out.println("모든 정보 출력 실행~");
+                    sm.allShowStuInfo();
                     break;
                 case 5 :
                     System.out.println("프로그램 종료");

@@ -17,14 +17,24 @@ public class Student {
         this.grade = grade;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
+    public int getAge() {
+        return age;
+    }
 
+    public String getCallNumber() {
+        return callNumber;
+    }
 
-    //학생
+    public String getGrade() {
+        return grade;
+    }
 
-
+    public void setCallNumber(String callNumber) {
+        this.callNumber = callNumber;
+    }
 }
 

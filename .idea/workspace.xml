@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea5e8f6c-bfb1-480f-bc26-6d9eb0932f41" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Calculator1/Add.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Calculator1/CalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Calculator1/Div.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Calculator1/Mul.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Calculator1/Sub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Member/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Member/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Member/MemberServiceExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculator/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculator/CalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stu_manage/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stu_manage/StudentManage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stu_manage/studentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/study2/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/study2/MemberTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/study2/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/study2/StudentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stu_manage/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stu_manage/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stu_manage/StudentManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stu_manage/StudentManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stu_manage/studentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stu_manage/studentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +39,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/dev/workspace/ClassTest2"
+    "last_opened_file_path": "D:/dev/workspace/ClassTest2",
+    "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
   <component name="RecentsManager">
