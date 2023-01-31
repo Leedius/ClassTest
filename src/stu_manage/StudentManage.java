@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class StudentManage {
     Scanner sc;
     Student[] students;         //학생정보가 들어갈 배열 선언
-    int index;                  //학생순서 변수 선언
+    int index;                  //학생등록수 변수 선언
     boolean find;               //
     String setNumber;           //번호 변경 변수 선언
 
@@ -15,7 +15,7 @@ public class StudentManage {
     public StudentManage() {
         sc = new Scanner(System.in);
         students = new Student[3];          //학생이 3명 들어갈 공간(배열) 생성.
-        index = 0;                          //학생순서 변수 초기화
+        index = 0;                          //학생등록된수 변수 초기화
     }
 
 
@@ -62,7 +62,7 @@ public class StudentManage {
         while (!find) {
             System.out.print("변경 학생 : ");
             String name = sc.next();
-            for (int i = 0; i < students.length; i++) {
+            for (int i = 0; i < index; i++) {
                 if (students[i].getName().equals(name)) {
                     System.out.print("연락처 : ");
                     setNumber = sc.next();
@@ -81,36 +81,35 @@ public class StudentManage {
     public void showStuInfo(){
         find=false;
         while(!find){
-        System.out.print("정보를 열람할 학생 : ");
-        String name = sc.next();
-        for(int i = 0; i<students.length; i++) {
-            if (students[i].getName().equals(name)) {
-                System.out.println("요청하신 학생의 정보입니다.");
-                System.out.println("이름 : " + students[i].getName() +
-                        ", 나이 : " + students[i].getAge() +
-                        ", 연락처 : " + students[i].getCallNumber() +
-                        ", 학점 : " + students[i].getGrade());
-                find = true;
-                break;
+            System.out.print("정보를 열람할 학생 : ");
+            String name = sc.next();
+            for(int i = 0; i<index; i++) {
+                if (students[i].getName().equals(name)) {
+                    System.out.println("\n요청하신 학생의 정보입니다.");
+                    students[i].printStuInfo();
+                    find = true;
+                    break;
+                }
             }
-            }
-        if (!find) {
+            if (!find) {
                 System.out.println("해당하는 학생이 존재하지 않습니다. 다시 입력하세요.");
-        }
-
+            }
         }
     }
 
     //모든학생정보출력
+    //모든 학생의 정보입니다. 현재 총 학생 수는 2명입니다.
+    //이름 : 홍길동, 나이 : 20, 학점 : A
+    //이름 : 장길동, 나이 : 30, 학점 : B
     public void allShowStuInfo(){
-        System.out.println("모든 학생의 정보입니다. 현재 총 학생 수는"+index+"명 입니다.");
-        for(int i=0; i<index; i++){
-                System.out.println("이름 : " + students[i].getName() +
-                        ", 나이 : " + students[i].getAge() +
-                        ", 연락처 : " + students[i].getCallNumber() +
-                        ", 학점 : " + students[i].getGrade());
-
+        if(index==0){
+            System.out.println("현재 등록된 학생이 없습니다.");
         }
-
+        else {
+        System.out.println("모든 학생의 정보입니다. 현재 총 학생 수는 "+index+"명 입니다.");
+        for(int i=0; i<index; i++) {
+            students[i].printStuInfo();
+        }
+        }
     }
 }
